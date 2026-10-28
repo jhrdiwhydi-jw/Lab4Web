@@ -1,0 +1,100 @@
+
+/* HALAMAN ABOUT DAN CONTACT */
+
+.about-content,
+.contact-content {
+    padding: 30px;
+    min-height: 400px;
+    line-height: 1.6;
+}
+
+.about-content h2,
+.contact-content h2 {
+    color: #1f5faa;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.about-content p,
+.contact-content p {
+    margin-bottom: 20px;
+}
+
+/* Portfolio */
+.portfolio {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.portfolio-box {
+    flex: 1;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.portfolio-box h3 {
+    color: #1f5faa;
+    margin-bottom: 10px;
+}
+
+/* Form Contact */
+.contact-content form {
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.contact-content label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-content input,
+.contact-content textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.contact-content textarea {
+    resize: vertical;
+}
+
+.contact-content button {
+    background-color: #1f5faa;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.contact-content button:hover {
+    background-color: #2b83ea;
+}
+
+/* Tampilan layar kecil */
+@media screen and (max-width: 600px) {
+    #container {
+        width: 100%;
+    }
+
+    .portfolio {
+        flex-direction: column;
+    }
+
+    .about-content,
+    .contact-content {
+        padding: 20px;
+    }
+}
